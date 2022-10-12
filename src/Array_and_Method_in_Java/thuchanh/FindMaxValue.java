@@ -34,6 +34,6 @@ public class FindMaxValue {
                 index = i;
             }
         }
-        System.out.println("The largest property value in the list is " + max + ", index: " + index);
+        System.out.println("The largest property value in the list is: " + max + ", index: " + index);
     }
 }
