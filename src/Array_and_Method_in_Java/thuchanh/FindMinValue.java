@@ -1,12 +1,9 @@
 package Array_and_Method_in_Java.thuchanh;
 
-import java.util.Scanner;
-
 public class FindMinValue {
     public static void main(String[] args) {
-        int[] array = {8, 5, 7, 9, 33, 77, 99, 11, 23};
-        int index = minValue(array);
-        System.out.println("The smallest element in the array is: " + array[index]);
+        int[] array = {8, 5, 7, 9, 2, 77, 99, 11, 23};
+        System.out.println("The smallest element in the array is: " + minValue(array));
     }
 
     public static int minValue(int[] arr) {
@@ -18,6 +15,6 @@ public class FindMinValue {
                 index = i;
             }
         }
-        return index;
+        return min;
     }
 }
