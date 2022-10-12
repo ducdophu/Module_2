@@ -6,9 +6,9 @@ public class Add_element_to_array {
     public static void main(String[] args) {
         int[] array = {4, 12, 7, 8, 1, 6, 9, 10};
         Scanner input = new Scanner(System.in);
-        System.out.printf("Enter a value: ");
+        System.out.print("Enter a value: ");
         int value = input.nextInt();
-        System.out.printf("Enter a position you want to add this value to: ");
+        System.out.print("Enter a position you want to add this value to: ");
         int index = input.nextInt();
 
         if (index <= 1 || (index + 1) >= (array.length)) {
@@ -23,9 +23,9 @@ public class Add_element_to_array {
                 if (i < index) newArray[i] = array[i];
             }
 
-            System.out.printf("New array: ");
+            System.out.print("New array: ");
             for (int i = 0; i < newArray.length; i++) {
-                System.out.printf(newArray[i] + " ");
+                System.out.print(newArray[i] + " ");
             }
         }
     }

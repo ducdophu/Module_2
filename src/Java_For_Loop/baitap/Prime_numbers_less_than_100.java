@@ -1,10 +1,7 @@
 package Java_For_Loop.baitap;
 
-import java.util.Scanner;
-
 public class Prime_numbers_less_than_100 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Các Số Nguyên tố nhỏ hơn 100 là:");
 
         for (int number = 2; number <= 100; number++) {

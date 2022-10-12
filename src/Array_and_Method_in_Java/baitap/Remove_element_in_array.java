@@ -8,12 +8,12 @@ public class Remove_element_in_array {
 
         System.out.print("Elements in array: ");
         for (int i = 0; i < arr.length; i++) {
-            System.out.printf(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("Enter the value you want to delete: ");
+        System.out.print("Enter the value you want to delete: ");
         int input = scanner.nextInt();
         int index = -1;
         for (int i = 0; i < arr.length; i++) {
