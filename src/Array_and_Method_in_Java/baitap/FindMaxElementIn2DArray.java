@@ -29,13 +29,17 @@ public class FindMaxElementIn2DArray {
         System.out.println();
 
         float max = array[0][0];
-        for (float[] row_float : array) {
-            for (float column_float : row_float) {
-                if (column_float > max) {
-                    max = column_float;
+        int index_i = 0;
+        int index_j = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                    index_i = i;
+                    index_j = j;
                 }
             }
         }
-        System.out.println("Max value of Array 2D is: " + max);
+        System.out.println("Max value of Array 2D is: array[" + index_i + "][" + index_j + "]= " + max);
     }
 }
