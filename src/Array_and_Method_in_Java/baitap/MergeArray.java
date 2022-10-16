@@ -2,7 +2,7 @@ package Array_and_Method_in_Java.baitap;
 
 import java.util.Scanner;
 
-public class Merge_array {
+public class MergeArray {
     public static void main(String[] args) {
         int[] arr1;
         int[] arr2;
