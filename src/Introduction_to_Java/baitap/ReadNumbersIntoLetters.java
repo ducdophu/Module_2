@@ -2,7 +2,7 @@ package Introduction_to_Java.baitap;
 
 import java.util.Scanner;
 
-public class Read_numbers_into_letters {
+public class ReadNumbersIntoLetters {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number;

@@ -2,7 +2,7 @@ package Array_and_Method_in_Java.baitap;
 
 import java.util.Scanner;
 
-public class Add_element_to_array {
+public class AddElementToArray {
     public static void main(String[] args) {
         int[] array = {4, 12, 7, 8, 1, 6, 9, 10};
         Scanner input = new Scanner(System.in);

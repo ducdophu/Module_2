@@ -2,7 +2,7 @@ package Array_and_Method_in_Java.baitap;
 
 import java.util.Scanner;
 
-public class Remove_element_in_array {
+public class RemoveElementInArray {
     public static void main(String[] args) {
         int[] arr = {4, 5, 7, 2, 11, 9, 8};
 

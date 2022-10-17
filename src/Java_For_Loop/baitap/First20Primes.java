@@ -1,9 +1,15 @@
 package Java_For_Loop.baitap;
 
-public class Prime_numbers_less_than_100 {
+import java.util.Scanner;
+
+public class First20Primes {
     public static void main(String[] args) {
-        System.out.println("Các Số Nguyên tố nhỏ hơn 100 là:");
-        for (int number = 2; number <= 100; number++) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bạn muốn in ra bao nhiêu Số Nguyên tố đầu tiên: ");
+        int N = scanner.nextInt();
+
+        int number = 1;
+        for (int countN = 0; countN < N; number++) {
             int count = 0;
             for (int i = 1; i <= number; i++) {
                 if (number % i == 0) {
@@ -12,6 +18,7 @@ public class Prime_numbers_less_than_100 {
             }
             if (count == 2) {
                 System.out.print(number + " ");
+                ++countN;
             }
         }
     }
