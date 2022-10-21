@@ -1,7 +1,5 @@
 package Class_and_Object_in_Java.baitap;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class QuadraticEquation {
