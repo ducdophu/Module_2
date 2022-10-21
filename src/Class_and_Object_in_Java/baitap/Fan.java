@@ -1,9 +1,9 @@
 package Class_and_Object_in_Java.baitap;
 
 public class Fan {
-    final int SLOW = 1;
-    final int MEDIUM = 2;
-    final int FAST = 3;
+    private final int SLOW = 1;
+    private final int MEDIUM = 2;
+    private final int FAST = 3;
 
     private int speed = SLOW;
     private boolean on = false;

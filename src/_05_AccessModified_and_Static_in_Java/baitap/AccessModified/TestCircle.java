@@ -1,5 +1,7 @@
 package _05_AccessModified_and_Static_in_Java.baitap.AccessModified;
 
+import _05_AccessModified_and_Static_in_Java.baitap.WriteOnlyClass.Test;
+
 public class TestCircle {
     public static void main(String[] args) {
         Circle c1 = new Circle();

@@ -45,11 +45,11 @@ public class QuadraticEquation {
         double c = scanner.nextDouble();
 
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
-        double delta1 = quadraticEquation.getDiscriminant();
+        double delta = quadraticEquation.getDiscriminant();
 
-        if (delta1 > 0) {
+        if (delta > 0) {
             System.out.println("The equation has two roots: " + quadraticEquation.getRoot1() + " and " + quadraticEquation.getRoot2());
-        } else if (delta1 == 0) {
+        } else if (delta == 0) {
             System.out.println("The equation has one root: " + quadraticEquation.getRoot1());
         } else {
             System.out.println("The equation has no roots! ");
