@@ -5,5 +5,7 @@ public class Test {
         Student student = new Student();
         student.setName("John Do");
         student.setClasses("A07");
+
+        System.out.println(student);
     }
 }

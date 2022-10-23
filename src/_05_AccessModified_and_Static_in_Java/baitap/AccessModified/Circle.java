@@ -1,6 +1,6 @@
 package _05_AccessModified_and_Static_in_Java.baitap.AccessModified;
 
-private class Circle {
+public class Circle {
     private double radius = 1.0;
     private String color = "red";
 
@@ -16,6 +16,6 @@ private class Circle {
     }
 
     public double getArea() {
-        return 3.1415926 * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 }
