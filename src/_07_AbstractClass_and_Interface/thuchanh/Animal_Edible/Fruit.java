@@ -1,4 +1,4 @@
 package _07_AbstractClass_and_Interface.thuchanh.Animal_Edible;
 
-public abstract class Fruit {
+public abstract class Fruit implements Edible {
 }
