@@ -1,8 +1,4 @@
 package _07_AbstractClass_and_Interface.baitap.Geometric_Colorable;
-
-import _07_AbstractClass_and_Interface.baitap.Geometric_Resizeable.Shape;
-import _07_AbstractClass_and_Interface.baitap.Geometric_Resizeable.Square;
-
 public class GeometricColorableTest {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[2];
