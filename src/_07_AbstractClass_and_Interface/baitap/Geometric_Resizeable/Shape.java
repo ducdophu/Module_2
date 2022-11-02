@@ -1,4 +1,4 @@
-package _07_AbstractClass_and_Interface.baitap.Geometric_Colorable;
+package _07_AbstractClass_and_Interface.baitap.Geometric_Resizeable;
 
 public class Shape {
     private String color;
