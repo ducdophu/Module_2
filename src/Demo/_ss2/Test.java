@@ -31,6 +31,9 @@ package Demo._ss2;//package Demo._ss2;
 //    }
 //}
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -56,8 +59,9 @@ class TestThrows2 {
         System.out.println("Luong binh thuong...");
 
         List list = new ArrayList();
+        FileReader.nullReader();
+
+        FileInputStream.nullInputStream();
 
     }
-
-
 }

@@ -9,5 +9,6 @@ public class TestBox {
 
         Box box1 = new Box<String>("hello");
         System.out.println("Gia tri: " + box1.getValue());
+
     }
 }
