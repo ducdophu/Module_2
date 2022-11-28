@@ -37,4 +37,12 @@ public class FileUtil {
         buff.write(country.getId() + "," + country.getCode() + "," + country.getName() + "\n");
         buff.close();
     }
+
+    public static void main(String[] args) throws IOException {
+       /* List<Country> countryList = readCSV();
+        for (Country country : countryList) {
+            System.out.println(country);
+        }*/
+        FileUtil.writeCSV(new Country(9, "VN", "Vietnam"));
+    }
 }
