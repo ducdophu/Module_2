@@ -26,6 +26,7 @@ public class StudentDao {
             student = new Student(id, name, age, address, gpa);
             studentList.add(student);
         }
+        buff.close();
         return studentList;
     }
 

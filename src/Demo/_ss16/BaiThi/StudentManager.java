@@ -1,6 +1,7 @@
 package Demo._ss16.BaiThi;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -49,6 +50,37 @@ public class StudentManager {
         } else {
             studentDao.writeCSV(studentList);
         }
+    }
+
+    public void delete(int id) throws IOException {
+        Student student = null;
+        int size = studentList.size();
+        for (int i = 0; i < size; i++) {
+            if (studentList.get(i).getId() == id) {
+                student = studentList.get(i);
+                break;
+            }
+        }
+        if (student != null) {
+            studentList.remove(student);
+            studentDao.writeCSV(studentList);
+        } else {
+            System.out.printf("id = %d not existed.\n", id);
+        }
+    }
+
+    /**
+     * sort student by name
+     */
+    public void sortStudentByName() {
+        Collections.sort(studentList, new SortStudentByName());
+    }
+
+    /**
+     * sort student by id
+     */
+    public void sortStudentByGPA() {
+        Collections.sort(studentList, new SortStudentByGPA());
     }
 
     public void show() {
@@ -113,12 +145,5 @@ public class StudentManager {
                 System.out.print("Khong hop le! Nhap lai Diem sinh vien: ");
             }
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        StudentManager studentManager = new StudentManager();
-        //int id = studentManager.inputId();
-        //studentManager.edit(id);
-        studentManager.show();
     }
 }

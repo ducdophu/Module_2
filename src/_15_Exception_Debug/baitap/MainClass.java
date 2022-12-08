@@ -10,6 +10,8 @@ public class MainClass {
         TriangleEdgesCheck check = new TriangleEdgesCheck();
 
         // Nhap du lieu
+
+        boolean checkTrue = false;
         try {
             System.out.print("Nhap vao canh thu nhat: ");
             int a = sc.nextInt();
@@ -17,7 +19,6 @@ public class MainClass {
             int b = sc.nextInt();
             System.out.print("Nhap vao canh thu ba: ");
             int c = sc.nextInt();
-
             try {
                 check.checkTriangleEdges(a, b, c);
             } catch (TriangleEdgesException ex) {
