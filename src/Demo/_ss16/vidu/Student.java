@@ -38,8 +38,9 @@ public class Student extends Person {
         Student student = new Student(1,"nguyen",34,8);
         Student student1 = new Student(1,"nguyen",34,8);
 
-        System.out.print(student.getInfo());
-        System.out.print(student1.getInfo());
-
+        System.out.println(student.getInfo());
+        System.out.println(student1.getInfo());
+        String data = "";
+        data += student.getInfo();
     }
 }
